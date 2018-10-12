@@ -13,7 +13,7 @@ class PalindromeTestViewController: UIViewController{
     @IBOutlet weak var palindromeTestTextField: UITextField!
     @IBOutlet weak var palindromeTestResultLabel: UILabel!
     
-    var viewModel: PalindromeTestViewModel!
+    private lazy var viewModel = PalindromeTestViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +33,16 @@ extension PalindromeTestViewController: UITextFieldDelegate{
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
+        guard let text = textField.text else{
+            return
+        }
+
+        if viewModel.isPalindrome(text){
+            palindromeTestResultLabel.text = "Yes! :)"
+            palindromeTestResultLabel.textColor = .white
+        }else{
+            palindromeTestResultLabel.text = "No :("
+            palindromeTestResultLabel.textColor = .red
+        }
     }
 }

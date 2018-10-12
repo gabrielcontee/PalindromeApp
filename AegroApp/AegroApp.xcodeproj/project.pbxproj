@@ -20,6 +20,7 @@
 		310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
 		310ED1992171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
 		310ED19A2171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
+		31233D6321714080003F31E8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6221714080003F31E8 /* String.swift */; };
 		314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
@@ -59,6 +60,7 @@
 		310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewController.swift; sourceTree = "<group>"; };
 		310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewModel.swift; sourceTree = "<group>"; };
 		310ED1982171179B00B1DF88 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		31233D6221714080003F31E8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		310ED15921710C3900B1DF88 /* AegroApp */ = {
 			isa = PBXGroup;
 			children = (
+				31233D6121714057003F31E8 /* Extension */,
 				310ED16621710C3B00B1DF88 /* Info.plist */,
 				310ED18B217116AF00B1DF88 /* SupportFiles */,
 				310ED18A217116A500B1DF88 /* Model */,
@@ -170,6 +173,14 @@
 				310ED16121710C3B00B1DF88 /* Assets.xcassets */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		31233D6121714057003F31E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				31233D6221714080003F31E8 /* String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31233D6321714080003F31E8 /* String.swift in Sources */,
 				310ED1912171172300B1DF88 /* PalindromeTestViewController.swift in Sources */,
 				310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */,
 				310ED18D217116F000B1DF88 /* WelcomeViewController.swift in Sources */,

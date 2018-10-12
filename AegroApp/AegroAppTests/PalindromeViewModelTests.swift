@@ -23,11 +23,19 @@ class PalindromeViewModelTests: XCTestCase {
         viewModel = nil
     }
 
+    /// Palindrome word test function
     func testPalindromeWord() {
         
-        let firstPalindrome = "ana"
+        let palindromeWord: [String] = ["ana", "ArAra", "mamam", "racificar", "RODADOR", "rír", "saiaS", "afã", "12344321", "!@!", ""]
+        let notPalindromeWords: [String] = ["Caso", "AEGRO", "navio", "piqui", "rodando", "obJETÍVO", "etc", "1234", "@!"]
         
-        XCTAssertTrue(viewModel.isPalindrome(word: firstPalindrome), "Ana is returing the wrong result")
+        for pWord in palindromeWord{
+            XCTAssertTrue(viewModel.isPalindrome(pWord), "\(pWord) is returing the wrong result")
+        }
+        
+        for notPWord in notPalindromeWords{
+            XCTAssertFalse(viewModel.isPalindrome(notPWord), "\(notPWord) is returing the wrong result")
+        }
     }
 
     func testPerformanceExample() {
