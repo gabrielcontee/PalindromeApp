@@ -48,6 +48,9 @@
                                 <state key="normal" title="Try it!">
                                     <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AVm-Xa-mUD" kind="show" id="qWX-rn-aGl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549019607843" green="0.68235294117647061" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,6 +70,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Palindrome-->
+        <scene sceneID="Cij-11-6bo">
+            <objects>
+                <viewController title="Palindrome" id="AVm-Xa-mUD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n2Q-G0-K12">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="S2m-Mw-PMh">
+                                <rect key="frame" x="16" y="128" width="343" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it palindrome?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSA-nP-gq7">
+                                        <rect key="frame" x="16" y="0.0" width="311" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="1" green="0.9909316333" blue="0.94943918819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your word here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFF-2Z-TSJ">
+                                        <rect key="frame" x="16" y="74" width="311" height="33"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIX-CD-vjF">
+                                        <rect key="frame" x="16" y="148" width="311" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="1" green="0.9909316333" blue="0.94943918819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" constant="16" id="02Y-4B-vDC"/>
+                                    <constraint firstItem="iSA-nP-gq7" firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" id="7Sx-dn-rec"/>
+                                    <constraint firstItem="KIX-CD-vjF" firstAttribute="leading" secondItem="DFF-2Z-TSJ" secondAttribute="leading" id="8cc-zd-XV8"/>
+                                    <constraint firstItem="KIX-CD-vjF" firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" id="Nq0-og-Bcd"/>
+                                    <constraint firstItem="DFF-2Z-TSJ" firstAttribute="leading" secondItem="S2m-Mw-PMh" secondAttribute="leading" constant="16" id="PBz-Ly-Xfl"/>
+                                    <constraint firstItem="iSA-nP-gq7" firstAttribute="leading" secondItem="DFF-2Z-TSJ" secondAttribute="leading" id="cKw-9E-dAS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.68235294120000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S2m-Mw-PMh" firstAttribute="top" secondItem="G3F-Kr-zM2" secondAttribute="top" constant="64" id="Fai-Yt-WhB"/>
+                            <constraint firstItem="S2m-Mw-PMh" firstAttribute="leading" secondItem="G3F-Kr-zM2" secondAttribute="leading" constant="16" id="eve-OD-hCz"/>
+                            <constraint firstItem="G3F-Kr-zM2" firstAttribute="trailing" secondItem="S2m-Mw-PMh" secondAttribute="trailing" constant="16" id="pgn-ki-bPg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G3F-Kr-zM2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gY-ks-mWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dV0-Uz-Qoi">
