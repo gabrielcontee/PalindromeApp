@@ -13,6 +13,8 @@ class PalindromeTestViewController: UIViewController{
     @IBOutlet weak var palindromeTestTextField: UITextField!
     @IBOutlet weak var palindromeTestResultLabel: UILabel!
     
+    var viewModel: PalindromeTestViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,5 @@ extension PalindromeTestViewController: UITextFieldDelegate{
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        print(textField.text)
     }
 }

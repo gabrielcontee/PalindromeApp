@@ -8,7 +8,9 @@
 
 import Foundation
 
-class  PalindromeTestViewModel: NSObject {
+class PalindromeTestViewModel: NSObject {
     
-    
+    func isPalindrome(word: String) -> Bool{
+        return false
+    }
 }

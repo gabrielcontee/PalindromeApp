@@ -11,16 +11,18 @@
 		310ED16021710C3900B1DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED15E21710C3900B1DF88 /* Main.storyboard */; };
 		310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16121710C3B00B1DF88 /* Assets.xcassets */; };
 		310ED16521710C3B00B1DF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */; };
-		310ED17021710C3B00B1DF88 /* AegroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED16F21710C3B00B1DF88 /* AegroAppTests.swift */; };
+		310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */; };
 		310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */; };
 		310ED18D217116F000B1DF88 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
 		310ED18F217116F000B1DF88 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
 		310ED1912171172300B1DF88 /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
-		310ED1932171172300B1DF88 /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
 		310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
 		310ED1992171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
 		310ED19A2171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
+		314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
+		314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
+		314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		310ED16421710C3B00B1DF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		310ED16621710C3B00B1DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310ED16B21710C3B00B1DF88 /* AegroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AegroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		310ED16F21710C3B00B1DF88 /* AegroAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AegroAppTests.swift; sourceTree = "<group>"; };
+		310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeViewModelTests.swift; sourceTree = "<group>"; };
 		310ED17121710C3B00B1DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310ED17621710C3B00B1DF88 /* AegroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AegroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AegroAppUITests.swift; sourceTree = "<group>"; };
@@ -119,7 +121,7 @@
 		310ED16E21710C3B00B1DF88 /* AegroAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				310ED16F21710C3B00B1DF88 /* AegroAppTests.swift */,
+				310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */,
 				310ED17121710C3B00B1DF88 /* Info.plist */,
 			);
 			path = AegroAppTests;
@@ -313,9 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310ED17021710C3B00B1DF88 /* AegroAppTests.swift in Sources */,
+				310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */,
 				310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
 				310ED19A2171179B00B1DF88 /* Words.swift in Sources */,
+				314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,9 +326,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310ED1932171172300B1DF88 /* PalindromeTestViewController.swift in Sources */,
+				314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */,
 				310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */,
 				310ED18F217116F000B1DF88 /* WelcomeViewController.swift in Sources */,
+				314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
