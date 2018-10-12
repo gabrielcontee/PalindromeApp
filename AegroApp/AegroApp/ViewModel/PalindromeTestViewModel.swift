@@ -10,6 +10,8 @@ import Foundation
 
 class PalindromeTestViewModel: NSObject {
     
+    lazy var palindromeResultText: Box<String> = Box("")
+    
     /// Given a word, returns a boolean that indicates if it is palindrome or not
     func isPalindrome(_ word: String) -> Bool{
         
@@ -19,8 +21,10 @@ class PalindromeTestViewModel: NSObject {
         let reversedWord = String(uppercasedWord.reversed())
         
         if uppercasedWord == reversedWord {
+            self.palindromeResultText.value = "Yes :)"
             return true
         } else {
+            self.palindromeResultText.value = "No :("
             return false
         }
     }

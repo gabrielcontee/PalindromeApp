@@ -20,6 +20,9 @@ class PalindromeTestViewController: UIViewController{
         
         palindromeTestTextField.delegate = self as UITextFieldDelegate
         palindromeTestTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        viewModel.palindromeResultText.bind(key: String(describing: self)) { (result) in
+            self.palindromeTestResultLabel.text = result
+        }
     }
     
 }
@@ -38,10 +41,8 @@ extension PalindromeTestViewController: UITextFieldDelegate{
         }
 
         if viewModel.isPalindrome(text){
-            palindromeTestResultLabel.text = "Yes! :)"
             palindromeTestResultLabel.textColor = .white
         }else{
-            palindromeTestResultLabel.text = "No :("
             palindromeTestResultLabel.textColor = .red
         }
     }
