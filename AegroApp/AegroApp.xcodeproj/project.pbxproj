@@ -28,6 +28,9 @@
 		314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
+		31B2C9C021715A5400E60287 /* RealmWordPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */; };
+		6807FFE8661B3EEBF138DAAB /* Pods_AegroAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D427CF72BA867D4ECFE35E0F /* Pods_AegroAppTests.framework */; };
+		C594BBF812030F82B6D733C3 /* Pods_AegroApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A03F076885CF5E531F5CFE /* Pods_AegroApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,13 @@
 		31233D6221714080003F31E8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		31233D6421714D3F003F31E8 /* Boxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxing.swift; sourceTree = "<group>"; };
 		31233D6621714D61003F31E8 /* Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
+		31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWordPersistenceTests.swift; sourceTree = "<group>"; };
+		37A03F076885CF5E531F5CFE /* Pods_AegroApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AegroApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B52BF67BC74261DCC109D7A /* Pods-AegroApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AegroApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AegroApp/Pods-AegroApp.release.xcconfig"; sourceTree = "<group>"; };
+		5F5124D19154DE4F3EAE38CE /* Pods-AegroApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AegroApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AegroApp/Pods-AegroApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE2BE4C1559C8509256543D9 /* Pods-AegroAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AegroAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AegroAppTests/Pods-AegroAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D427CF72BA867D4ECFE35E0F /* Pods_AegroAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AegroAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8165CD521F216CF95582D09 /* Pods-AegroAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AegroAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AegroAppTests/Pods-AegroAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C594BBF812030F82B6D733C3 /* Pods_AegroApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6807FFE8661B3EEBF138DAAB /* Pods_AegroAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +113,8 @@
 				310ED16E21710C3B00B1DF88 /* AegroAppTests */,
 				310ED17921710C3B00B1DF88 /* AegroAppUITests */,
 				310ED15821710C3900B1DF88 /* Products */,
+				E90F81AB5F3E7E100FE54FC9 /* Pods */,
+				68020B63F43BFDFEB1EC1F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */,
+				31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */,
 				310ED17121710C3B00B1DF88 /* Info.plist */,
 			);
 			path = AegroAppTests;
@@ -191,6 +206,26 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		68020B63F43BFDFEB1EC1F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37A03F076885CF5E531F5CFE /* Pods_AegroApp.framework */,
+				D427CF72BA867D4ECFE35E0F /* Pods_AegroAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E90F81AB5F3E7E100FE54FC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F5124D19154DE4F3EAE38CE /* Pods-AegroApp.debug.xcconfig */,
+				5B52BF67BC74261DCC109D7A /* Pods-AegroApp.release.xcconfig */,
+				D8165CD521F216CF95582D09 /* Pods-AegroAppTests.debug.xcconfig */,
+				CE2BE4C1559C8509256543D9 /* Pods-AegroAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 310ED17F21710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroApp" */;
 			buildPhases = (
+				08D5886902E6A24B95F7DB2A /* [CP] Check Pods Manifest.lock */,
 				310ED15321710C3900B1DF88 /* Sources */,
 				310ED15421710C3900B1DF88 /* Frameworks */,
 				310ED15521710C3900B1DF88 /* Resources */,
+				96FC9C54752E62826129E43F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 310ED18221710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroAppTests" */;
 			buildPhases = (
+				0371245CEF59ACEB0BB5BCFA /* [CP] Check Pods Manifest.lock */,
 				310ED16721710C3B00B1DF88 /* Sources */,
 				310ED16821710C3B00B1DF88 /* Frameworks */,
 				310ED16921710C3B00B1DF88 /* Resources */,
+				747BF423C2E6B11AF276076F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +356,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0371245CEF59ACEB0BB5BCFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AegroAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08D5886902E6A24B95F7DB2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AegroApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		747BF423C2E6B11AF276076F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AegroAppTests/Pods-AegroAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AegroAppTests/Pods-AegroAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FC9C54752E62826129E43F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AegroApp/Pods-AegroApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AegroApp/Pods-AegroApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		310ED15321710C3900B1DF88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -340,6 +474,7 @@
 				310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */,
 				310EB0BC21714ED500A8B91B /* Listener.swift in Sources */,
 				310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
+				31B2C9C021715A5400E60287 /* RealmWordPersistenceTests.swift in Sources */,
 				310ED19A2171179B00B1DF88 /* Words.swift in Sources */,
 				310EB0BB21714ED000A8B91B /* Boxing.swift in Sources */,
 				314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */,
@@ -510,7 +645,9 @@
 		};
 		310ED18021710C3B00B1DF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5124D19154DE4F3EAE38CE /* Pods-AegroApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HR54FA3Z7;
@@ -528,7 +665,9 @@
 		};
 		310ED18121710C3B00B1DF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B52BF67BC74261DCC109D7A /* Pods-AegroApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HR54FA3Z7;
@@ -546,8 +685,9 @@
 		};
 		310ED18321710C3B00B1DF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8165CD521F216CF95582D09 /* Pods-AegroAppTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HR54FA3Z7;
@@ -567,8 +707,9 @@
 		};
 		310ED18421710C3B00B1DF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2BE4C1559C8509256543D9 /* Pods-AegroAppTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HR54FA3Z7;
