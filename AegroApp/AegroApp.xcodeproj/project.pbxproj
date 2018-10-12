@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED15A21710C3900B1DF88 /* AppDelegate.swift */; };
+		310ED15D21710C3900B1DF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED15C21710C3900B1DF88 /* ViewController.swift */; };
+		310ED16021710C3900B1DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED15E21710C3900B1DF88 /* Main.storyboard */; };
+		310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16121710C3B00B1DF88 /* Assets.xcassets */; };
+		310ED16521710C3B00B1DF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */; };
+		310ED17021710C3B00B1DF88 /* AegroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED16F21710C3B00B1DF88 /* AegroAppTests.swift */; };
+		310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		310ED16C21710C3B00B1DF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 310ED14F21710C3900B1DF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310ED15621710C3900B1DF88;
+			remoteInfo = AegroApp;
+		};
+		310ED17721710C3B00B1DF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 310ED14F21710C3900B1DF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310ED15621710C3900B1DF88;
+			remoteInfo = AegroApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		310ED15721710C3900B1DF88 /* AegroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AegroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		310ED15A21710C3900B1DF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		310ED15C21710C3900B1DF88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		310ED15F21710C3900B1DF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		310ED16121710C3B00B1DF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		310ED16421710C3B00B1DF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		310ED16621710C3B00B1DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310ED16B21710C3B00B1DF88 /* AegroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AegroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		310ED16F21710C3B00B1DF88 /* AegroAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AegroAppTests.swift; sourceTree = "<group>"; };
+		310ED17121710C3B00B1DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310ED17621710C3B00B1DF88 /* AegroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AegroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AegroAppUITests.swift; sourceTree = "<group>"; };
+		310ED17C21710C3B00B1DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		310ED15421710C3900B1DF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310ED16821710C3B00B1DF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310ED17321710C3B00B1DF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310ED14E21710C3900B1DF88 = {
+			isa = PBXGroup;
+			children = (
+				310ED15921710C3900B1DF88 /* AegroApp */,
+				310ED16E21710C3B00B1DF88 /* AegroAppTests */,
+				310ED17921710C3B00B1DF88 /* AegroAppUITests */,
+				310ED15821710C3900B1DF88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		310ED15821710C3900B1DF88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				310ED15721710C3900B1DF88 /* AegroApp.app */,
+				310ED16B21710C3B00B1DF88 /* AegroAppTests.xctest */,
+				310ED17621710C3B00B1DF88 /* AegroAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		310ED15921710C3900B1DF88 /* AegroApp */ = {
+			isa = PBXGroup;
+			children = (
+				310ED15A21710C3900B1DF88 /* AppDelegate.swift */,
+				310ED15C21710C3900B1DF88 /* ViewController.swift */,
+				310ED15E21710C3900B1DF88 /* Main.storyboard */,
+				310ED16121710C3B00B1DF88 /* Assets.xcassets */,
+				310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */,
+				310ED16621710C3B00B1DF88 /* Info.plist */,
+			);
+			path = AegroApp;
+			sourceTree = "<group>";
+		};
+		310ED16E21710C3B00B1DF88 /* AegroAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				310ED16F21710C3B00B1DF88 /* AegroAppTests.swift */,
+				310ED17121710C3B00B1DF88 /* Info.plist */,
+			);
+			path = AegroAppTests;
+			sourceTree = "<group>";
+		};
+		310ED17921710C3B00B1DF88 /* AegroAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */,
+				310ED17C21710C3B00B1DF88 /* Info.plist */,
+			);
+			path = AegroAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		310ED15621710C3900B1DF88 /* AegroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310ED17F21710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroApp" */;
+			buildPhases = (
+				310ED15321710C3900B1DF88 /* Sources */,
+				310ED15421710C3900B1DF88 /* Frameworks */,
+				310ED15521710C3900B1DF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AegroApp;
+			productName = AegroApp;
+			productReference = 310ED15721710C3900B1DF88 /* AegroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		310ED16A21710C3B00B1DF88 /* AegroAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310ED18221710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroAppTests" */;
+			buildPhases = (
+				310ED16721710C3B00B1DF88 /* Sources */,
+				310ED16821710C3B00B1DF88 /* Frameworks */,
+				310ED16921710C3B00B1DF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310ED16D21710C3B00B1DF88 /* PBXTargetDependency */,
+			);
+			name = AegroAppTests;
+			productName = AegroAppTests;
+			productReference = 310ED16B21710C3B00B1DF88 /* AegroAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		310ED17521710C3B00B1DF88 /* AegroAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310ED18521710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroAppUITests" */;
+			buildPhases = (
+				310ED17221710C3B00B1DF88 /* Sources */,
+				310ED17321710C3B00B1DF88 /* Frameworks */,
+				310ED17421710C3B00B1DF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310ED17821710C3B00B1DF88 /* PBXTargetDependency */,
+			);
+			name = AegroAppUITests;
+			productName = AegroAppUITests;
+			productReference = 310ED17621710C3B00B1DF88 /* AegroAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		310ED14F21710C3900B1DF88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Gabriel Conte";
+				TargetAttributes = {
+					310ED15621710C3900B1DF88 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					310ED16A21710C3B00B1DF88 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 310ED15621710C3900B1DF88;
+					};
+					310ED17521710C3B00B1DF88 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 310ED15621710C3900B1DF88;
+					};
+				};
+			};
+			buildConfigurationList = 310ED15221710C3900B1DF88 /* Build configuration list for PBXProject "AegroApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 310ED14E21710C3900B1DF88;
+			productRefGroup = 310ED15821710C3900B1DF88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				310ED15621710C3900B1DF88 /* AegroApp */,
+				310ED16A21710C3B00B1DF88 /* AegroAppTests */,
+				310ED17521710C3B00B1DF88 /* AegroAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		310ED15521710C3900B1DF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310ED16521710C3B00B1DF88 /* LaunchScreen.storyboard in Resources */,
+				310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */,
+				310ED16021710C3900B1DF88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310ED16921710C3B00B1DF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310ED17421710C3B00B1DF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		310ED15321710C3900B1DF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310ED15D21710C3900B1DF88 /* ViewController.swift in Sources */,
+				310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310ED16721710C3B00B1DF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310ED17021710C3B00B1DF88 /* AegroAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310ED17221710C3B00B1DF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		310ED16D21710C3B00B1DF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 310ED15621710C3900B1DF88 /* AegroApp */;
+			targetProxy = 310ED16C21710C3B00B1DF88 /* PBXContainerItemProxy */;
+		};
+		310ED17821710C3B00B1DF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 310ED15621710C3900B1DF88 /* AegroApp */;
+			targetProxy = 310ED17721710C3B00B1DF88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		310ED15E21710C3900B1DF88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				310ED15F21710C3900B1DF88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				310ED16421710C3B00B1DF88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		310ED17D21710C3B00B1DF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		310ED17E21710C3B00B1DF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		310ED18021710C3B00B1DF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HR54FA3Z7;
+				INFOPLIST_FILE = AegroApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielconte.AegroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		310ED18121710C3B00B1DF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HR54FA3Z7;
+				INFOPLIST_FILE = AegroApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielconte.AegroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		310ED18321710C3B00B1DF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HR54FA3Z7;
+				INFOPLIST_FILE = AegroAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielconte.AegroAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AegroApp.app/AegroApp";
+			};
+			name = Debug;
+		};
+		310ED18421710C3B00B1DF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HR54FA3Z7;
+				INFOPLIST_FILE = AegroAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielconte.AegroAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AegroApp.app/AegroApp";
+			};
+			name = Release;
+		};
+		310ED18621710C3B00B1DF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HR54FA3Z7;
+				INFOPLIST_FILE = AegroAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielconte.AegroAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AegroApp;
+			};
+			name = Debug;
+		};
+		310ED18721710C3B00B1DF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HR54FA3Z7;
+				INFOPLIST_FILE = AegroAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielconte.AegroAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AegroApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		310ED15221710C3900B1DF88 /* Build configuration list for PBXProject "AegroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310ED17D21710C3B00B1DF88 /* Debug */,
+				310ED17E21710C3B00B1DF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310ED17F21710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310ED18021710C3B00B1DF88 /* Debug */,
+				310ED18121710C3B00B1DF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310ED18221710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310ED18321710C3B00B1DF88 /* Debug */,
+				310ED18421710C3B00B1DF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310ED18521710C3B00B1DF88 /* Build configuration list for PBXNativeTarget "AegroAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310ED18621710C3B00B1DF88 /* Debug */,
+				310ED18721710C3B00B1DF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 310ED14F21710C3900B1DF88 /* Project object */;
+}
