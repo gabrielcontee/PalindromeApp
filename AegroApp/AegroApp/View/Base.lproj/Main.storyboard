@@ -12,7 +12,7 @@
         <!--Aegro App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AegroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="AegroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
         <!--Palindrome-->
         <scene sceneID="Cij-11-6bo">
             <objects>
-                <viewController title="Palindrome" id="AVm-Xa-mUD" sceneMemberID="viewController">
+                <viewController title="Palindrome" id="AVm-Xa-mUD" customClass="PalindromeTestViewController" customModule="AegroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n2Q-G0-K12">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G3F-Kr-zM2"/>
                     </view>
+                    <connections>
+                        <outlet property="palindromeTestResultLabel" destination="KIX-CD-vjF" id="5Oa-Tc-TJO"/>
+                        <outlet property="palindromeTestTextField" destination="DFF-2Z-TSJ" id="j5M-Ps-z1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gY-ks-mWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
