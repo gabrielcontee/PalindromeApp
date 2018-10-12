@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310EB0BB21714ED000A8B91B /* Boxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6421714D3F003F31E8 /* Boxing.swift */; };
+		310EB0BC21714ED500A8B91B /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6621714D61003F31E8 /* Listener.swift */; };
 		310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED15A21710C3900B1DF88 /* AppDelegate.swift */; };
 		310ED16021710C3900B1DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED15E21710C3900B1DF88 /* Main.storyboard */; };
 		310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16121710C3B00B1DF88 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		310ED1992171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
 		310ED19A2171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
 		31233D6321714080003F31E8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6221714080003F31E8 /* String.swift */; };
+		31233D6521714D3F003F31E8 /* Boxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6421714D3F003F31E8 /* Boxing.swift */; };
+		31233D6721714D61003F31E8 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6621714D61003F31E8 /* Listener.swift */; };
 		314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
@@ -61,6 +65,8 @@
 		310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewModel.swift; sourceTree = "<group>"; };
 		310ED1982171179B00B1DF88 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		31233D6221714080003F31E8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		31233D6421714D3F003F31E8 /* Boxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxing.swift; sourceTree = "<group>"; };
+		31233D6621714D61003F31E8 /* Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,8 @@
 				310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */,
 				310ED15A21710C3900B1DF88 /* AppDelegate.swift */,
 				310ED16121710C3B00B1DF88 /* Assets.xcassets */,
+				31233D6421714D3F003F31E8 /* Boxing.swift */,
+				31233D6621714D61003F31E8 /* Listener.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -317,9 +325,11 @@
 				31233D6321714080003F31E8 /* String.swift in Sources */,
 				310ED1912171172300B1DF88 /* PalindromeTestViewController.swift in Sources */,
 				310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */,
+				31233D6521714D3F003F31E8 /* Boxing.swift in Sources */,
 				310ED18D217116F000B1DF88 /* WelcomeViewController.swift in Sources */,
 				310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
 				310ED1992171179B00B1DF88 /* Words.swift in Sources */,
+				31233D6721714D61003F31E8 /* Listener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */,
+				310EB0BC21714ED500A8B91B /* Listener.swift in Sources */,
 				310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
 				310ED19A2171179B00B1DF88 /* Words.swift in Sources */,
+				310EB0BB21714ED000A8B91B /* Boxing.swift in Sources */,
 				314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
