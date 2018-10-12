@@ -10,5 +10,8 @@ import UIKit
 
 class PalindromeTestViewController: UIViewController{
     
+    @IBOutlet weak var palindromeTestTextField: UITextField!
+    @IBOutlet weak var palindromeTestResultLabel: UILabel!
+    
     
 }
