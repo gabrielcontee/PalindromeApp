@@ -107,6 +107,7 @@
 		310ED15921710C3900B1DF88 /* AegroApp */ = {
 			isa = PBXGroup;
 			children = (
+				310ED16621710C3B00B1DF88 /* Info.plist */,
 				310ED18B217116AF00B1DF88 /* SupportFiles */,
 				310ED18A217116A500B1DF88 /* Model */,
 				310ED1892171169D00B1DF88 /* ViewModel */,
@@ -165,7 +166,6 @@
 				310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */,
 				310ED15A21710C3900B1DF88 /* AppDelegate.swift */,
 				310ED16121710C3B00B1DF88 /* Assets.xcassets */,
-				310ED16621710C3B00B1DF88 /* Info.plist */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
