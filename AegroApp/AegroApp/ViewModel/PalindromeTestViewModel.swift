@@ -30,4 +30,13 @@ class PalindromeTestViewModel: NSObject {
             return false
         }
     }
+    
+    func saveNewPalindromeWord(_ word: String){
+        
+        if isPalindrome(word){
+            dataSource.saveNewWord(word: word)
+            print("salvou!")
+            print(dataSource.retrieveAll())
+        }
+    }
 }
