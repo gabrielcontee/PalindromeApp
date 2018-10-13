@@ -13,6 +13,8 @@ class PalindromeTestViewController: UIViewController{
     @IBOutlet weak var palindromeTestTextField: UITextField!
     @IBOutlet weak var palindromeTestResultLabel: UILabel!
     
+    @IBOutlet weak var wordsTableView: UITableView!
+    
     private lazy var viewModel = PalindromeTestViewModel()
     
     
@@ -57,6 +59,8 @@ extension PalindromeTestViewController: UITextFieldDelegate{
         viewModel.saveNewPalindromeWord(text)
     }
 }
+
+
 
 extension UIViewController {
     func hideKeyboardFunction() {
