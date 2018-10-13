@@ -14,6 +14,13 @@ class PalindromeTestViewModel: NSObject {
     
     lazy var palindromeResultText: Box<String> = Box("")
     
+    lazy var palindromeWords: [String?] = []
+    
+    override init() {
+        super.init()
+        palindromeWords = getPalindromeWords()
+    }
+    
     /// Given a word, returns a boolean that indicates if it is palindrome or not
     func isPalindrome(_ word: String) -> Bool{
         
@@ -35,8 +42,36 @@ class PalindromeTestViewModel: NSObject {
         
         if isPalindrome(word){
             dataSource.saveNewWord(word: word)
-            print("salvou!")
-            print(dataSource.retrieveAll())
+        }
+    }
+    
+    func getPalindromeWords() -> [String]{
+        let words = Array(dataSource.retrieveAll()).map({$0.text})
+        return words
+    }
+    
+    
+    func getWordAt(index: Int) -> String{
+        guard let word = palindromeWords[index] else{
+            return ""
+        }
+        return word
+    }
+    
+    func deleteWordAt(index: Int, completion: () -> ()){
+        guard let text = palindromeWords[index] else{
+            return
+        }
+        let word = Word(id: text, text: text)
+        dataSource.delete(word: word) {
+            completion()
+        }
+    }
+    
+    func cleanWords(completion: () -> ()){
+        dataSource.cleanDatabase(){
+            palindromeWords = []
+            completion()
         }
     }
 }

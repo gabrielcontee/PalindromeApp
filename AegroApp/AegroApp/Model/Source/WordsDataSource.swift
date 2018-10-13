@@ -15,9 +15,9 @@ class WordsDataSource: NSObject{
     
     /// Add new word to the database
     @discardableResult func saveNewWord(word: String, in realm: Realm = try! Realm()) -> Word {
-        let item = Word(word)
+        let item = Word(id: word, text: word)
         try! realm.write {
-            realm.add(item)
+            realm.add(item, update: true)
         }
         return item
     }
@@ -28,21 +28,29 @@ class WordsDataSource: NSObject{
                 .Property.isCompleted.rawValue)
     }
     
+    func getWord(key: String, in realm: Realm = try! Realm()) -> Word? {
+        return realm.object(ofType: Word.self, forPrimaryKey: key)
+    }
+    
     func toggleCompleted(word: Word) {
         try! realm.write {
             word.isCompleted = !(word.isCompleted)
         }
     }
     
-    func delete(word: Word, in realm: Realm = try! Realm()) {
+    func delete(word: Word, in realm: Realm = try! Realm(), completion: () -> ()) {
         try! realm.write {
-            realm.delete(word)
+            if let obj = (realm.object(ofType: Word.self, forPrimaryKey: word.id)){
+                realm.delete(obj)
+                completion()
+            }
         }
     }
     
-    func cleanDatabase(in realm: Realm = try! Realm()) {
+    func cleanDatabase(in realm: Realm = try! Realm(), completion: () -> ()) {
         try! realm.write {
             realm.deleteAll()
+            completion()
         }
     }
     
