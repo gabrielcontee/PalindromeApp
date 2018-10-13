@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		310EB0BB21714ED000A8B91B /* Boxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6421714D3F003F31E8 /* Boxing.swift */; };
-		310EB0BC21714ED500A8B91B /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6621714D61003F31E8 /* Listener.swift */; };
+		3106F29721726EDD0037EA77 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
+		3106F29C217277360037EA77 /* WordsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9C721725E1900E60287 /* WordsDataSource.swift */; };
 		310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED15A21710C3900B1DF88 /* AppDelegate.swift */; };
 		310ED16021710C3900B1DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED15E21710C3900B1DF88 /* Main.storyboard */; };
 		310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16121710C3B00B1DF88 /* Assets.xcassets */; };
@@ -19,16 +19,12 @@
 		310ED18F217116F000B1DF88 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
 		310ED1912171172300B1DF88 /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
-		310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
-		310ED1992171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
-		310ED19A2171179B00B1DF88 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1982171179B00B1DF88 /* Words.swift */; };
 		31233D6321714080003F31E8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6221714080003F31E8 /* String.swift */; };
 		31233D6521714D3F003F31E8 /* Boxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6421714D3F003F31E8 /* Boxing.swift */; };
 		31233D6721714D61003F31E8 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6621714D61003F31E8 /* Listener.swift */; };
-		314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
-		314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
-		314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
 		31B2C9C021715A5400E60287 /* RealmWordPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */; };
+		31B2C9C521724E2B00E60287 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9C421724E2B00E60287 /* Word.swift */; };
+		31B2C9CF217266D400E60287 /* BaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9CE217266D400E60287 /* BaseSpec.swift */; };
 		6807FFE8661B3EEBF138DAAB /* Pods_AegroAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D427CF72BA867D4ECFE35E0F /* Pods_AegroAppTests.framework */; };
 		C594BBF812030F82B6D733C3 /* Pods_AegroApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A03F076885CF5E531F5CFE /* Pods_AegroApp.framework */; };
 /* End PBXBuildFile section */
@@ -66,11 +62,13 @@
 		310ED18C217116F000B1DF88 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewController.swift; sourceTree = "<group>"; };
 		310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewModel.swift; sourceTree = "<group>"; };
-		310ED1982171179B00B1DF88 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		31233D6221714080003F31E8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		31233D6421714D3F003F31E8 /* Boxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxing.swift; sourceTree = "<group>"; };
 		31233D6621714D61003F31E8 /* Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
 		31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWordPersistenceTests.swift; sourceTree = "<group>"; };
+		31B2C9C421724E2B00E60287 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		31B2C9C721725E1900E60287 /* WordsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsDataSource.swift; sourceTree = "<group>"; };
+		31B2C9CE217266D400E60287 /* BaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSpec.swift; sourceTree = "<group>"; };
 		37A03F076885CF5E531F5CFE /* Pods_AegroApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AegroApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B52BF67BC74261DCC109D7A /* Pods-AegroApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AegroApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AegroApp/Pods-AegroApp.release.xcconfig"; sourceTree = "<group>"; };
 		5F5124D19154DE4F3EAE38CE /* Pods-AegroApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AegroApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AegroApp/Pods-AegroApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +144,7 @@
 			children = (
 				310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */,
 				31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */,
+				31B2C9CE217266D400E60287 /* BaseSpec.swift */,
 				310ED17121710C3B00B1DF88 /* Info.plist */,
 			);
 			path = AegroAppTests;
@@ -181,7 +180,8 @@
 		310ED18A217116A500B1DF88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				310ED1982171179B00B1DF88 /* Words.swift */,
+				31B2C9C921725E1F00E60287 /* Source */,
+				31B2C9C421724E2B00E60287 /* Word.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,6 +204,14 @@
 				31233D6221714080003F31E8 /* String.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		31B2C9C921725E1F00E60287 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				31B2C9C721725E1900E60287 /* WordsDataSource.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		68020B63F43BFDFEB1EC1F68 /* Frameworks */ = {
@@ -412,6 +420,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AegroAppTests/Pods-AegroAppTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -419,6 +429,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,11 +470,12 @@
 			files = (
 				31233D6321714080003F31E8 /* String.swift in Sources */,
 				310ED1912171172300B1DF88 /* PalindromeTestViewController.swift in Sources */,
+				31B2C9C521724E2B00E60287 /* Word.swift in Sources */,
 				310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */,
 				31233D6521714D3F003F31E8 /* Boxing.swift in Sources */,
+				3106F29C217277360037EA77 /* WordsDataSource.swift in Sources */,
 				310ED18D217116F000B1DF88 /* WelcomeViewController.swift in Sources */,
 				310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
-				310ED1992171179B00B1DF88 /* Words.swift in Sources */,
 				31233D6721714D61003F31E8 /* Listener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,12 +485,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */,
-				310EB0BC21714ED500A8B91B /* Listener.swift in Sources */,
-				310ED1962171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
+				3106F29721726EDD0037EA77 /* WelcomeViewController.swift in Sources */,
+				31B2C9CF217266D400E60287 /* BaseSpec.swift in Sources */,
 				31B2C9C021715A5400E60287 /* RealmWordPersistenceTests.swift in Sources */,
-				310ED19A2171179B00B1DF88 /* Words.swift in Sources */,
-				310EB0BB21714ED000A8B91B /* Boxing.swift in Sources */,
-				314154D6217121AD00A9887B /* PalindromeTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,10 +495,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314154D7217121B100A9887B /* PalindromeTestViewController.swift in Sources */,
 				310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */,
 				310ED18F217116F000B1DF88 /* WelcomeViewController.swift in Sources */,
-				314154D8217121EA00A9887B /* PalindromeTestViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

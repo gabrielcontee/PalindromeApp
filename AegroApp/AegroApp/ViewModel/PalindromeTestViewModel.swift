@@ -10,6 +10,8 @@ import Foundation
 
 class PalindromeTestViewModel: NSObject {
     
+    private lazy var dataSource = WordsDataSource()
+    
     lazy var palindromeResultText: Box<String> = Box("")
     
     /// Given a word, returns a boolean that indicates if it is palindrome or not
@@ -26,6 +28,15 @@ class PalindromeTestViewModel: NSObject {
         } else {
             self.palindromeResultText.value = "No :("
             return false
+        }
+    }
+    
+    func saveNewPalindromeWord(_ word: String){
+        
+        if isPalindrome(word){
+            dataSource.saveNewWord(word: word)
+            print("salvou!")
+            print(dataSource.retrieveAll())
         }
     }
 }

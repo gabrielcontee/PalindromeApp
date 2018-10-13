@@ -38,6 +38,17 @@ class PalindromeViewModelTests: XCTestCase {
             XCTAssertFalse(viewModel.isPalindrome(notPWord), "\(notPWord) is returing the wrong result")
         }
     }
+    
+    /// Test binding between elements
+    func testbindTests() {
+        
+        let expectation = self.expectation(description: "palindromeResultText")
+        viewModel.palindromeResultText.bind(key: String(describing: self)) { (data) in
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertEqual( viewModel.palindromeResultText.value, "")
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

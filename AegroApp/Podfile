@@ -9,6 +9,8 @@ end
 
 target 'AegroAppTests' do
     pod 'RealmSwift'
+    pod 'Quick'
+    pod 'Nimble'
 end
 
 
