@@ -15,6 +15,7 @@ class PalindromeTestViewController: UIViewController{
     
     private lazy var viewModel = PalindromeTestViewModel()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

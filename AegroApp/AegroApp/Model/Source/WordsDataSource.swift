@@ -34,9 +34,15 @@ class WordsDataSource: NSObject{
         }
     }
     
-    func delete(word: Word) {
+    func delete(word: Word, in realm: Realm = try! Realm()) {
         try! realm.write {
             realm.delete(word)
+        }
+    }
+    
+    func cleanDatabase(in realm: Realm = try! Realm()) {
+        try! realm.write {
+            realm.deleteAll()
         }
     }
     
