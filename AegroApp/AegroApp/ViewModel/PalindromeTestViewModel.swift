@@ -10,6 +10,8 @@ import Foundation
 
 class PalindromeTestViewModel: NSObject {
     
+    private lazy var dataSource = WordsDataSource()
+    
     lazy var palindromeResultText: Box<String> = Box("")
     
     /// Given a word, returns a boolean that indicates if it is palindrome or not

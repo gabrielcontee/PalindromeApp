@@ -6,11 +6,25 @@
 //  Copyright © 2018 Gabriel Conte. All rights reserved.
 //
 
-import XCTest
 import RealmSwift
+import XCTest
 
 @testable import AegroApp
 
 class RealmWordPersistenceTests: XCTestCase {
 
+    var dataSource: WordsDataSource = WordsDataSource()
+    let realm = try! Realm()
+    
+    override func setUp() {
+        super.setUp()
+        
+        
+    }
+    
+    
+    override func tearDown() {
+        super.tearDown()
+    }
+    
 }
