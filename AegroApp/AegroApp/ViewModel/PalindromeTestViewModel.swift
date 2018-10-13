@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol DataUpdate {
+    func loadTable()
+}
+
 class PalindromeTestViewModel: NSObject {
     
     private lazy var dataSource = WordsDataSource()
@@ -15,6 +19,8 @@ class PalindromeTestViewModel: NSObject {
     lazy var palindromeResultText: Box<String> = Box("")
     
     lazy var palindromeWords: [String?] = []
+    
+    var delegate: DataUpdate?
     
     override init() {
         super.init()
@@ -42,6 +48,8 @@ class PalindromeTestViewModel: NSObject {
         
         if isPalindrome(word){
             dataSource.saveNewWord(word: word)
+            palindromeWords.append(word)
+            delegate?.loadTable()
         }
     }
     
@@ -52,26 +60,26 @@ class PalindromeTestViewModel: NSObject {
     
     
     func getWordAt(index: Int) -> String{
-        guard let word = palindromeWords[index] else{
+        let isValid = palindromeWords.indices.contains(index)
+        if isValid{
+            return palindromeWords[index]!
+        }else{
             return ""
         }
-        return word
     }
     
-    func deleteWordAt(index: Int, completion: () -> ()){
+    func deleteWordAt(index: Int){
         guard let text = palindromeWords[index] else{
             return
         }
         let word = Word(id: text, text: text)
-        dataSource.delete(word: word) {
-            completion()
-        }
+        dataSource.delete(word: word)
     }
     
-    func cleanWords(completion: () -> ()){
+    func cleanWords(){
         dataSource.cleanDatabase(){
             palindromeWords = []
-            completion()
+            delegate?.loadTable()
         }
     }
 }

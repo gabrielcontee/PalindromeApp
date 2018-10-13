@@ -52,9 +52,9 @@ class RealmWordPersistenceTests: BaseSpec {
                 describe("retrieving all objects") {
                     it("returns all persons") {
                         let words = self.dataSource.retrieveAll(in: self.realm)
-                        expect(words.count) == 3
-                        expect(words[1].text) == "aNa"
-                        expect(words[2].text) == "arara"
+                        expect(words.count) == 2
+                        expect(words[0].text) == "aNa"
+                        expect(words[1].text) == "arara"
                     }
                 }
             }
@@ -74,9 +74,10 @@ class RealmWordPersistenceTests: BaseSpec {
             
             describe("Clean database") {
                 it("deletes all records from database") {
-                    self.dataSource.cleanDatabase(in: self.realm)
-                    let words = self.dataSource.retrieveAll(in: self.realm)
-                    expect(words.count) == 0
+                    self.dataSource.cleanDatabase(in: self.realm, completion: {
+                        let words = self.dataSource.retrieveAll(in: self.realm)
+                        expect(words.count) == 0
+                    })
                 }
             }
         }

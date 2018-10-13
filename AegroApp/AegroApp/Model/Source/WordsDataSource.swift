@@ -38,11 +38,10 @@ class WordsDataSource: NSObject{
         }
     }
     
-    func delete(word: Word, in realm: Realm = try! Realm(), completion: () -> ()) {
+    func delete(word: Word, in realm: Realm = try! Realm()) {
         try! realm.write {
             if let obj = (realm.object(ofType: Word.self, forPrimaryKey: word.id)){
                 realm.delete(obj)
-                completion()
             }
         }
     }

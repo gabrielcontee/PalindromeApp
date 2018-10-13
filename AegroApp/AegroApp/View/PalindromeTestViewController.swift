@@ -19,8 +19,16 @@ class PalindromeTestViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup()
+    }
+    
+    @IBAction func cleanTableAction(_ sender: UIButton) {
+        viewModel.cleanWords()
+    }
+    
+    private func setup(){
         self.hideKeyboardFunction()
+        viewModel.delegate = self
         palindromeTestTextField.delegate = self as UITextFieldDelegate
         palindromeTestTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         viewModel.palindromeResultText.bind(key: String(describing: self)) { (result) in
@@ -28,12 +36,12 @@ class PalindromeTestViewController: UIViewController{
         }
     }
     
-    @IBAction func cleanTableAction(_ sender: UIButton) {
-        viewModel.cleanWords {
-            wordsTableView.reloadData()
-        }
+}
+
+extension PalindromeTestViewController: DataUpdate{
+    func loadTable() {
+        wordsTableView.reloadData()
     }
-    
 }
 
 extension PalindromeTestViewController: UITextFieldDelegate{
@@ -71,9 +79,8 @@ extension PalindromeTestViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.viewModel.deleteWordAt(index: indexPath.row) {
-                self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
-            }
+            self.viewModel.deleteWordAt(index: indexPath.row)
+            self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
 }
@@ -86,8 +93,9 @@ extension PalindromeTestViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = wordsTableView.dequeueReusableCell(withIdentifier: "palindromeCell", for: indexPath) as UITableViewCell
-    
-        cell.detailTextLabel?.text = viewModel.getWordAt(index: indexPath.row)
+        
+        
+        cell.textLabel?.text = viewModel.getWordAt(index: indexPath.row)
         
         return cell
     }
