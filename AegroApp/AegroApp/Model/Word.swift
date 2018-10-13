@@ -23,6 +23,12 @@ class Word: Object {
         return Word.Property.id.rawValue
     }
     
+    convenience init(id: String = UUID().uuidString, text: String = "") {
+        self.init()
+        self.id = id
+        self.text = text
+    }
+    
     convenience init(_ text: String) {
         self.init()
         self.text = text

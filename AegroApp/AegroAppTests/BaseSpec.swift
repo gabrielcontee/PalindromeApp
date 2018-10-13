@@ -10,6 +10,8 @@ import Quick
 import Nimble
 import RealmSwift
 
+@testable import AegroApp
+
 class BaseSpec: QuickSpec {
     
     override func spec() {

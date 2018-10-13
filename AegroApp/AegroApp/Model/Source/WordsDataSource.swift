@@ -40,12 +40,4 @@ class WordsDataSource: NSObject{
         }
     }
     
-    //    try! realm.object(ofType: Word.self(), forPrimaryKey: <#T##KeyType#>)
-    //
-    //
-    //    let theDog = realm.objects(Dog.self).filter("age == 1").first
-    //    try! realm.write {
-    //    theDog!.age = 3
-    //    }
-    
 }
