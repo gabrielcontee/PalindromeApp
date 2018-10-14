@@ -40,6 +40,7 @@ class PalindromeTestViewController: UIViewController{
 
 extension PalindromeTestViewController: DataUpdate{
     func loadTable() {
+        print("Lista: \(viewModel.palindromeWords)")
         wordsTableView.reloadData()
     }
 }
@@ -80,7 +81,7 @@ extension PalindromeTestViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             self.viewModel.deleteWordAt(index: indexPath.row)
-            self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
+//            self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
 }

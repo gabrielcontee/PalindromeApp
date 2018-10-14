@@ -14,13 +14,15 @@ class WordsDataSource: NSObject{
     let realm = try! Realm()
     
     /// Add new word to the database
-    @discardableResult func saveNewWord(word: String, in realm: Realm = try! Realm()) -> Word {
+    func saveNewWord(word: String, in realm: Realm = try! Realm(), completion: ()-> ()) {
         let item = Word(id: word, text: word)
+        
         try! realm.write {
             realm.add(item, update: true)
+            completion()
         }
-        return item
     }
+    
     
     func retrieveAll(in realm: Realm = try! Realm()) -> Results<Word> {
         return realm.objects(Word.self)

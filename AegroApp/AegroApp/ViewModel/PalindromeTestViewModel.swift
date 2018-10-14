@@ -30,6 +30,11 @@ class PalindromeTestViewModel: NSObject {
     /// Given a word, returns a boolean that indicates if it is palindrome or not
     func isPalindrome(_ word: String) -> Bool{
         
+        if word == ""{
+            self.palindromeResultText.value = "Empty :|"
+            return false
+        }
+        
         // uppercase the word and remove any accent for future comparision
         let uppercasedWord = word.uppercased().folding(options: .diacriticInsensitive, locale: .current)
         
@@ -46,10 +51,11 @@ class PalindromeTestViewModel: NSObject {
     
     func saveNewPalindromeWord(_ word: String){
         
-        if isPalindrome(word){
-            dataSource.saveNewWord(word: word)
-            palindromeWords.append(word)
-            delegate?.loadTable()
+        if isPalindrome(word) && !palindromeWords.contains(word){
+            dataSource.saveNewWord(word: word) {
+                palindromeWords.append(word)
+                delegate?.loadTable()
+            }
         }
     }
     
@@ -74,6 +80,8 @@ class PalindromeTestViewModel: NSObject {
         }
         let word = Word(id: text, text: text)
         dataSource.delete(word: word)
+        palindromeWords.remove(at: index)
+        delegate?.loadTable()
     }
     
     func cleanWords(){
