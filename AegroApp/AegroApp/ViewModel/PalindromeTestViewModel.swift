@@ -75,6 +75,10 @@ class PalindromeTestViewModel: NSObject {
     }
     
     func deleteWordAt(index: Int){
+        let isValid = palindromeWords.indices.contains(index)
+        if !isValid{
+            return
+        }
         guard let text = palindromeWords[index] else{
             return
         }
