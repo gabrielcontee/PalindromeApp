@@ -13,12 +13,22 @@ class PalindromeTestViewController: UIViewController{
     @IBOutlet weak var palindromeTestTextField: UITextField!
     @IBOutlet weak var palindromeTestResultLabel: UILabel!
     
-    private lazy var viewModel = PalindromeTestViewModel()
+    @IBOutlet weak var wordsTableView: UITableView!
     
+    private lazy var viewModel = PalindromeTestViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+    
+    @IBAction func cleanTableAction(_ sender: UIButton) {
+        viewModel.cleanWords()
+    }
+    
+    private func setup(){
         self.hideKeyboardFunction()
+        viewModel.delegate = self
         palindromeTestTextField.delegate = self as UITextFieldDelegate
         palindromeTestTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         viewModel.palindromeResultText.bind(key: String(describing: self)) { (result) in
@@ -26,6 +36,13 @@ class PalindromeTestViewController: UIViewController{
         }
     }
     
+}
+
+extension PalindromeTestViewController: DataUpdate{
+    func loadTable() {
+        print("Lista: \(viewModel.palindromeWords)")
+        wordsTableView.reloadData()
+    }
 }
 
 extension PalindromeTestViewController: UITextFieldDelegate{
@@ -55,6 +72,33 @@ extension PalindromeTestViewController: UITextFieldDelegate{
             return
         }
         viewModel.saveNewPalindromeWord(text)
+        self.wordsTableView.reloadData()
+    }
+}
+
+extension PalindromeTestViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.viewModel.deleteWordAt(index: indexPath.row)
+//            self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+}
+
+extension PalindromeTestViewController: UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.getPalindromeWords().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = wordsTableView.dequeueReusableCell(withIdentifier: "palindromeCell", for: indexPath) as UITableViewCell
+        
+        
+        cell.textLabel?.text = viewModel.getWordAt(index: indexPath.row)
+        
+        return cell
     }
 }
 

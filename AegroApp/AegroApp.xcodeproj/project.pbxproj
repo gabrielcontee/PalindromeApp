@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3106F29721726EDD0037EA77 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
 		3106F29C217277360037EA77 /* WordsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9C721725E1900E60287 /* WordsDataSource.swift */; };
+		3106F2A32172F26B0037EA77 /* WordsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F2A22172F26B0037EA77 /* WordsListViewModelTests.swift */; };
 		310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED15A21710C3900B1DF88 /* AppDelegate.swift */; };
 		310ED16021710C3900B1DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED15E21710C3900B1DF88 /* Main.storyboard */; };
 		310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16121710C3B00B1DF88 /* Assets.xcassets */; };
 		310ED16521710C3B00B1DF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16321710C3B00B1DF88 /* LaunchScreen.storyboard */; };
 		310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */; };
 		310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */; };
-		310ED18D217116F000B1DF88 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
-		310ED18F217116F000B1DF88 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED18C217116F000B1DF88 /* WelcomeViewController.swift */; };
 		310ED1912171172300B1DF88 /* PalindromeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */; };
 		310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */; };
 		31233D6321714080003F31E8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31233D6221714080003F31E8 /* String.swift */; };
@@ -47,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3106F2A22172F26B0037EA77 /* WordsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewModelTests.swift; sourceTree = "<group>"; };
 		310ED15721710C3900B1DF88 /* AegroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AegroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310ED15A21710C3900B1DF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310ED15F21710C3900B1DF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		310ED17621710C3B00B1DF88 /* AegroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AegroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		310ED17A21710C3B00B1DF88 /* AegroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AegroAppUITests.swift; sourceTree = "<group>"; };
 		310ED17C21710C3B00B1DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		310ED18C217116F000B1DF88 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewController.swift; sourceTree = "<group>"; };
 		310ED1942171176200B1DF88 /* PalindromeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTestViewModel.swift; sourceTree = "<group>"; };
 		31233D6221714080003F31E8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -143,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				310ED16F21710C3B00B1DF88 /* PalindromeViewModelTests.swift */,
+				3106F2A22172F26B0037EA77 /* WordsListViewModelTests.swift */,
 				31B2C9BF21715A5400E60287 /* RealmWordPersistenceTests.swift */,
 				31B2C9CE217266D400E60287 /* BaseSpec.swift */,
 				310ED17121710C3B00B1DF88 /* Info.plist */,
@@ -163,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				310ED15E21710C3900B1DF88 /* Main.storyboard */,
-				310ED18C217116F000B1DF88 /* WelcomeViewController.swift */,
 				310ED1902171172300B1DF88 /* PalindromeTestViewController.swift */,
 			);
 			path = View;
@@ -474,7 +472,6 @@
 				310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */,
 				31233D6521714D3F003F31E8 /* Boxing.swift in Sources */,
 				3106F29C217277360037EA77 /* WordsDataSource.swift in Sources */,
-				310ED18D217116F000B1DF88 /* WelcomeViewController.swift in Sources */,
 				310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
 				31233D6721714D61003F31E8 /* Listener.swift in Sources */,
 			);
@@ -485,9 +482,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				310ED17021710C3B00B1DF88 /* PalindromeViewModelTests.swift in Sources */,
-				3106F29721726EDD0037EA77 /* WelcomeViewController.swift in Sources */,
 				31B2C9CF217266D400E60287 /* BaseSpec.swift in Sources */,
 				31B2C9C021715A5400E60287 /* RealmWordPersistenceTests.swift in Sources */,
+				3106F2A32172F26B0037EA77 /* WordsListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +493,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				310ED17B21710C3B00B1DF88 /* AegroAppUITests.swift in Sources */,
-				310ED18F217116F000B1DF88 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
