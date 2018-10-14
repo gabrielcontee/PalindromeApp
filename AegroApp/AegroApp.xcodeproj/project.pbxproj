@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3106F29C217277360037EA77 /* WordsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2C9C721725E1900E60287 /* WordsDataSource.swift */; };
 		3106F2A32172F26B0037EA77 /* WordsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F2A22172F26B0037EA77 /* WordsListViewModelTests.swift */; };
+		3106F2A72172F9AB0037EA77 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F2A62172F9AB0037EA77 /* UIView.swift */; };
 		310ED15B21710C3900B1DF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310ED15A21710C3900B1DF88 /* AppDelegate.swift */; };
 		310ED16021710C3900B1DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310ED15E21710C3900B1DF88 /* Main.storyboard */; };
 		310ED16221710C3B00B1DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310ED16121710C3B00B1DF88 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		3106F2A22172F26B0037EA77 /* WordsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewModelTests.swift; sourceTree = "<group>"; };
+		3106F2A62172F9AB0037EA77 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		310ED15721710C3900B1DF88 /* AegroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AegroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310ED15A21710C3900B1DF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310ED15F21710C3900B1DF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				31233D6221714080003F31E8 /* String.swift */,
+				3106F2A62172F9AB0037EA77 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				31233D6521714D3F003F31E8 /* Boxing.swift in Sources */,
 				3106F29C217277360037EA77 /* WordsDataSource.swift in Sources */,
 				310ED1952171176200B1DF88 /* PalindromeTestViewModel.swift in Sources */,
+				3106F2A72172F9AB0037EA77 /* UIView.swift in Sources */,
 				31233D6721714D61003F31E8 /* Listener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

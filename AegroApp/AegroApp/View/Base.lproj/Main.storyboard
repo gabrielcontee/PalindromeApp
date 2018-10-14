@@ -79,71 +79,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="S2m-Mw-PMh">
-                                <rect key="frame" x="16" y="96" width="343" height="181"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="S2m-Mw-PMh">
+                                <rect key="frame" x="32" y="96" width="311" height="131"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it palindrome?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSA-nP-gq7">
-                                        <rect key="frame" x="16" y="0.0" width="311" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                         <color key="textColor" red="1" green="0.9909316333" blue="0.94943918819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your word here..." textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DFF-2Z-TSJ">
-                                        <rect key="frame" x="16" y="74" width="311" height="33"/>
+                                        <rect key="frame" x="0.0" y="49" width="311" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIX-CD-vjF">
-                                        <rect key="frame" x="16" y="148" width="311" height="33"/>
+                                        <rect key="frame" x="0.0" y="98" width="311" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                         <color key="textColor" red="1" green="0.9909316333" blue="0.94943918819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" constant="16" id="02Y-4B-vDC"/>
+                                    <constraint firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" id="02Y-4B-vDC"/>
                                     <constraint firstItem="iSA-nP-gq7" firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" id="7Sx-dn-rec"/>
                                     <constraint firstItem="KIX-CD-vjF" firstAttribute="leading" secondItem="DFF-2Z-TSJ" secondAttribute="leading" id="8cc-zd-XV8"/>
                                     <constraint firstItem="KIX-CD-vjF" firstAttribute="trailing" secondItem="DFF-2Z-TSJ" secondAttribute="trailing" id="Nq0-og-Bcd"/>
-                                    <constraint firstItem="DFF-2Z-TSJ" firstAttribute="leading" secondItem="S2m-Mw-PMh" secondAttribute="leading" constant="16" id="PBz-Ly-Xfl"/>
+                                    <constraint firstItem="DFF-2Z-TSJ" firstAttribute="leading" secondItem="S2m-Mw-PMh" secondAttribute="leading" id="PBz-Ly-Xfl"/>
                                     <constraint firstItem="iSA-nP-gq7" firstAttribute="leading" secondItem="DFF-2Z-TSJ" secondAttribute="leading" id="cKw-9E-dAS"/>
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rht-dM-19Z">
-                                <rect key="frame" x="16" y="342" width="343" height="309"/>
+                                <rect key="frame" x="32" y="292" width="311" height="343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="palindromeCell" textLabel="Mku-ZO-1g8" style="IBUITableViewCellStyleDefault" id="dmN-v8-rBF">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="311" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dmN-v8-rBF" id="uaa-3V-cdj">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="311" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mku-ZO-1g8">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="281" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="AVm-Xa-mUD" id="5Fm-va-esb"/>
                                     <outlet property="delegate" destination="AVm-Xa-mUD" id="9hL-xC-UlQ"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spI-h3-GPE">
-                                <rect key="frame" x="16" y="301" width="343" height="33"/>
+                                <rect key="frame" x="32" y="251" width="311" height="33"/>
                                 <color key="backgroundColor" red="1" green="0.9909316333" blue="0.94943918819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Clean">
                                     <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="cleanTableAction:" destination="AVm-Xa-mUD" eventType="touchUpInside" id="chn-pO-q4o"/>
                                 </connections>
@@ -151,16 +169,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.68235294120000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rht-dM-19Z" firstAttribute="leading" secondItem="G3F-Kr-zM2" secondAttribute="leading" constant="16" id="0ue-qL-5K1"/>
                             <constraint firstItem="S2m-Mw-PMh" firstAttribute="top" secondItem="G3F-Kr-zM2" secondAttribute="top" constant="32" id="Fai-Yt-WhB"/>
                             <constraint firstItem="rht-dM-19Z" firstAttribute="top" secondItem="spI-h3-GPE" secondAttribute="bottom" constant="8" id="IY4-jU-a7e"/>
-                            <constraint firstItem="G3F-Kr-zM2" firstAttribute="bottom" secondItem="rht-dM-19Z" secondAttribute="bottom" constant="16" id="LdR-7J-QMt"/>
-                            <constraint firstItem="G3F-Kr-zM2" firstAttribute="trailing" secondItem="rht-dM-19Z" secondAttribute="trailing" constant="16" id="MZG-sT-RoU"/>
+                            <constraint firstItem="G3F-Kr-zM2" firstAttribute="bottom" secondItem="rht-dM-19Z" secondAttribute="bottom" constant="32" id="LdR-7J-QMt"/>
                             <constraint firstItem="spI-h3-GPE" firstAttribute="leading" secondItem="rht-dM-19Z" secondAttribute="leading" id="Mec-ly-5ql"/>
-                            <constraint firstItem="S2m-Mw-PMh" firstAttribute="leading" secondItem="G3F-Kr-zM2" secondAttribute="leading" constant="16" id="eve-OD-hCz"/>
+                            <constraint firstItem="S2m-Mw-PMh" firstAttribute="leading" secondItem="G3F-Kr-zM2" secondAttribute="leading" constant="32" id="eve-OD-hCz"/>
+                            <constraint firstItem="rht-dM-19Z" firstAttribute="leading" secondItem="S2m-Mw-PMh" secondAttribute="leading" id="i5P-aR-lpd"/>
                             <constraint firstItem="spI-h3-GPE" firstAttribute="top" secondItem="S2m-Mw-PMh" secondAttribute="bottom" constant="24" id="iRe-1t-Ke7"/>
-                            <constraint firstItem="G3F-Kr-zM2" firstAttribute="trailing" secondItem="S2m-Mw-PMh" secondAttribute="trailing" constant="16" id="pgn-ki-bPg"/>
+                            <constraint firstItem="G3F-Kr-zM2" firstAttribute="trailing" secondItem="S2m-Mw-PMh" secondAttribute="trailing" constant="32" id="pgn-ki-bPg"/>
                             <constraint firstItem="spI-h3-GPE" firstAttribute="trailing" secondItem="rht-dM-19Z" secondAttribute="trailing" id="u6y-p8-AUd"/>
+                            <constraint firstItem="rht-dM-19Z" firstAttribute="trailing" secondItem="S2m-Mw-PMh" secondAttribute="trailing" id="vkn-oz-ruG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G3F-Kr-zM2"/>
                     </view>

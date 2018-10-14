@@ -40,7 +40,6 @@ class PalindromeTestViewController: UIViewController{
 
 extension PalindromeTestViewController: DataUpdate{
     func loadTable() {
-        print("Lista: \(viewModel.palindromeWords)")
         wordsTableView.reloadData()
     }
 }
@@ -48,7 +47,6 @@ extension PalindromeTestViewController: DataUpdate{
 extension PalindromeTestViewController: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         palindromeTestTextField.resignFirstResponder()
         return true
     }
@@ -71,6 +69,9 @@ extension PalindromeTestViewController: UITextFieldDelegate{
         guard let text = textField.text else{
             return
         }
+        if viewModel.isPalindrome(text){
+            textField.text = ""
+        }
         viewModel.saveNewPalindromeWord(text)
         self.wordsTableView.reloadData()
     }
@@ -81,7 +82,7 @@ extension PalindromeTestViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             self.viewModel.deleteWordAt(index: indexPath.row)
-//            self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
+            self.wordsTableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
 }

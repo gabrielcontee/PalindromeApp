@@ -85,7 +85,6 @@ class PalindromeTestViewModel: NSObject {
         let word = Word(id: text, text: text)
         dataSource.delete(word: word)
         palindromeWords.remove(at: index)
-        delegate?.loadTable()
     }
     
     func cleanWords(){
