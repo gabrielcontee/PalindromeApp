@@ -36,17 +36,17 @@ class RealmWordPersistenceTests: BaseSpec {
             describe("Create") {
                 it("saves object to database correctly") {
                     
-                    self.dataSource.saveNewWord(word: palindromeString1, in: self.realm)
-                    
-                    let wordFromDatabase = self.realm.objects(Word.self).last
-                    expect(wordFromDatabase?.text) == "aNa"
+                    self.dataSource.saveNewWord(word: palindromeString1, in: self.realm, completion: {
+                        let wordFromDatabase = self.realm.objects(Word.self).last
+                        expect(wordFromDatabase?.text) == "aNa"
+                    })
                 }
             }
             
             describe("Read") {
                 beforeEach {
-                    self.dataSource.saveNewWord(word: palindromeString1, in: self.realm)
-                    self.dataSource.saveNewWord(word: palindromeString2, in: self.realm)
+                    self.dataSource.saveNewWord(word: palindromeString1, in: self.realm, completion: {})
+                    self.dataSource.saveNewWord(word: palindromeString2, in: self.realm, completion: {})
                 }
                 
                 describe("retrieving all objects") {
