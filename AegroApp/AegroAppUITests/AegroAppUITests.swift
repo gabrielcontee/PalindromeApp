@@ -37,7 +37,10 @@ class AegroAppUITests: XCTestCase {
         app.buttons["Try it!"].tap()
         app.tables["Empty list"].swipeDown()
         app.buttons["Clean"].tap()
-        app.textFields["Your word here..."].tap()
+        let yourWordHereTextField = app.textFields["Your word here..."]
+        yourWordHereTextField.tap()
+        
+        
         
         let aKey = app/*@START_MENU_TOKEN@*/.keys["A"]/*[[".keyboards.keys[\"A\"]",".keys[\"A\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         aKey.tap()
@@ -60,6 +63,9 @@ class AegroAppUITests: XCTestCase {
         app.tables.buttons["Delete"].tap()
         app.navigationBars["Palindrome"].buttons["Aegro App"].tap()
         XCUIDevice.shared.orientation = .faceUp
+        
+        
+        
         
     }
 
